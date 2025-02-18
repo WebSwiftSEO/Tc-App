@@ -9,9 +9,18 @@
     "description": "Troanary Connection App for sharing, connecting, and earning Tro Coins.",
     "icons": [
         {
-            "src": "assets/images/tc-logo.webp",
+            "src": "assets/images/tc-logo-192.webp",
             "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "assets/images/tc-logo-512.webp",
+            "sizes": "512x512",
             "type": "image/webp"
         }
     ]
 }
+
+/* IMAGE FILES: assets/images */
+- tc-logo-192.webp (192x192 for PWA)
+- tc-logo-512.webp (512x512 for high-resolution devices)
