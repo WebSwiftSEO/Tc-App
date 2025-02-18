@@ -11,26 +11,29 @@
 </head>
 <body>
 
-    <!-- Main Interface -->
-    <div class="app-container">
-        <header>
-            <img src="assets/images/tc-logo-192.webp" alt="Tc Logo" class="logo" id="bluetoothShare">
-            <div class="search">
-                <input type="text" id="searchBox" placeholder="🔍">
-                <button onclick="searchContent()">📊</button>
-            </div>
-        </header>
+    <!-- 🚀 Tc Logo & Share Button -->
+    <div class="tc-share" onclick="shareApp()">Tc 📤</div>
 
-        <!-- Main Feed -->
-        <div id="feed" class="feed-container"></div>
+    <!-- 🎡 T-Wheel -->
+    <div class="wheel"></div>
 
-        <!-- Bottom Menu -->
-        <footer>
-            <button onclick="showFeed('friends')">👥</button>
-            <button onclick="showFeed('family')">👨‍👩‍👧</button>
-            <button onclick="showFeed('comedy')">🎭</button>
-            <button onclick="showWallet()">🪙</button>
-        </footer>
+    <!-- 🔗 Link Input -->
+    <input type="text" class="link-input" placeholder="🔗 Paste your link here" id="linkInput">
+
+    <!-- 📊 Emoji Feed Navigation -->
+    <div class="emoji-bar">
+        <div class="emoji-btn" onclick="loadFeed('trending')">📊</div>
+        <div class="emoji-btn" onclick="loadFeed('friends')">👥</div>
+        <div class="emoji-btn" onclick="loadFeed('family')">❤️</div>
+        <div class="emoji-btn" onclick="loadFeed('comedy')">🤡</div>
+        <div class="emoji-btn" onclick="loadFeed('home')">🏡</div>
+    </div>
+
+    <!-- 🛠️ Actions: Give, Receive, Random -->
+    <div class="emoji-bar" style="margin-top:30px;">
+        <div class="emoji-btn" onclick="action('give')">💸</div>
+        <div class="emoji-btn" onclick="action('receive')">📥</div>
+        <div class="emoji-btn" onclick="randomAction()">🔀</div>
     </div>
 
 </body>
