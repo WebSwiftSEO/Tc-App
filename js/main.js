@@ -26,20 +26,3 @@ function loadWallet() {
 
 document.addEventListener('DOMContentLoaded', () => loadWallet());
 
-/* MANIFEST FILE: manifest/manifest.json */
-{
-    "name": "Tc-App",
-    "short_name": "TcApp",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#00FFFF",
-    "description": "Troanary Connection App for sharing, connecting, and earning Tro Coins.",
-    "icons": [
-        {
-            "src": "assets/images/tc-logo.webp",
-            "sizes": "192x192",
-            "type": "image/webp"
-        }
-    ]
-}
