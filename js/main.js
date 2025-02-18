@@ -1,4 +1,4 @@
-/* JS FILE: js/app.js */
+/* JS FILE: js/main.js */
 document.getElementById('bluetoothShare').addEventListener('click', () => {
     navigator.bluetooth.requestDevice({ acceptAllDevices: true })
         .then(device => alert(`Bluetooth sharing with: ${device.name}`))
@@ -17,12 +17,5 @@ function searchContent() {
 
 function showWallet() {
     document.getElementById('feed').innerHTML = '<h2>Crypto Wallet Interface</h2>';
-}
-
-/* JS FILE: js/crypto-wallet.js */
-function loadWallet() {
     alert('Crypto wallet functionality coming soon!');
 }
-
-document.addEventListener('DOMContentLoaded', () => loadWallet());
-
